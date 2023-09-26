@@ -1,0 +1,368 @@
+@import './abstracts/variables';
+@import './mixins/breakpoints';
+@import './abstracts/comman';
+@import './includes/header';
+@import './includes/button';
+@import './includes/footer';
+
+//----------------------home page starts
+// --------------home-about section starts
+.about-space{
+    letter-spacing: 5px;
+    font-weight: 400;
+    @include media-min-xl{
+        font-size: 6rem;
+    }
+}
+.about-bordering{
+    border-radius: 50%;
+    background-color: $button-red;
+}
+// --------------home-about section ends
+// --------------home-service section starts
+.service-bg{
+    background-image: url(/public/images/section\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@include media-min-xl{
+    .about-positioning{
+        position: absolute;
+        top: 6%;
+        left: 15%;
+    }
+}
+@include media-min-lg{
+    .position-lorem{
+        line-height: 2.5rem;
+        position: relative;
+        right: 15%;
+    }
+}
+.home-service-bg{
+    background-image: url(/public/images/section\ 4.jpg);
+    background-position: center;
+    background-size: cover;
+    .img-set{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .price-trans{
+        background: rgba(255,255,255,0.8);
+    }
+}
+// --------------home-testimonial section ends
+// --------------home-testimonial section starts
+.home-test-bg{
+    background-image: url(/public/images/section\ 5.jpg);
+    background-position: center;
+    background-size: cover;
+    .testimonial-image{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .test-bg-trans{
+        background: rgba(255,255,255,0.3);
+    }
+}
+@include media-min-xl{
+    .testimonial-positioning1{
+        position: absolute;
+        left: 25%;
+    }
+    .testimonial-positioning{
+        position: absolute;
+        right: 25%;
+    }
+}
+// --------------home-testimonial section starts
+// --------------home-form section starts
+.home-form-bg{
+    background-image: url(/public/images/section\ 6.jpg);
+    background-position: center;
+    background-size: cover;
+    .form-head{
+        color: $form-head-clr;
+    }
+    .input-bg{
+        background: transparent;
+        border: 1px solid $form-border-clr;
+    }
+    ::placeholder{
+        color: $form-text-clr;
+    }
+    select{
+        width: 100%;
+        color: $form-text-clr;
+    }
+}
+.message-padding{
+    padding-bottom: 20%;
+}
+.form-bordering{
+    border-bottom: 1px dotted $black-clr;
+}
+.pricing-bottom{
+    background-color: $pricing-bottom;
+}
+@include media-min-xl{
+    .form-width{
+        width: 50%;
+    }
+    .form-position{
+        position: absolute;
+        top: 9%;
+    }
+}
+.icon-size{
+    padding: 18px 20px;
+}
+// --------------home-form section ends
+
+//----------------------about page starts
+//----------------------about-welcome-page section starts
+.welcome-bg{
+    background-image: url(/public/images/about-sec2-img.jpg);
+    background-position: center;
+    background-size: cover;
+    .set-width{
+        width: 68%;
+    }
+    .position1{
+        left: 3%;
+        top: 82%;
+    }
+}
+//----------------------about-welcome-page section ends
+//----------------------about-about salon section starts
+.abt-bg-color{
+    background-color: $about-bg-clr;
+}
+.img-position{
+    right: 35%;
+}
+@include media-min-lg{
+    .about-section{
+        background: linear-gradient(
+            to left, $about-bg-clr 0%, $about-bg-clr 45%,                                                                 
+            $pricing-bottom 45%, $pricing-bottom 100% );
+    }
+}
+//----------------------about-about salon section ends
+//----------------------about-story section starts
+.abt-story-bg{
+    background-image: url(/public/images/abt-story-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@include media-min-lg{
+    .img-height{
+        height: 70vh;
+    }
+}
+//----------------------about-story section ends
+//----------------------about-team section starts
+.abt-team-bg{
+    background-color: $pricing-bottom;
+}
+@include media-min-md{
+    .height-set{
+        height: 80%;
+    }
+}
+.carousal-pad{
+    margin-bottom: 70%;
+}
+//----------------------about-team section ends
+//----------------------about page starts
+
+//----------------------service page starts
+//----------------------service-about section starts
+@include media-min-lg{
+    .service-section{
+        background: linear-gradient(
+            to left, $black-clr 0%, $black-clr 45%,                                                                 
+            $pricing-bottom 45%, $pricing-bottom 100% );
+    }
+}
+.service-img-set{
+    height: 80vh;
+    width: 100%;
+    border: 1px solid $white-clr;
+}
+.position-img{
+    width: 60%;
+    position: absolute;
+    right: 40%;
+    top: 40%;
+}
+.bg-dark-set{
+    @include media-max-lg{
+        background-color: $black-clr;
+    }
+}
+.service-do-bg{
+    background-color: $service-do-bg;
+}
+//----------------------service-about section ends
+// --------------service-do section starts
+.service-do-bg{
+    background-color: $service-do-bg;
+    .img-width-set{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    @include media-min-md{
+        .img-width-set{
+            width: 7.5rem;
+            height: 7.5rem;
+            border-radius: 50%;
+        }
+    }
+    .rotate{
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        letter-spacing: 15px;
+    }
+}
+// --------------service-do section ends
+// --------------service-offer section starts
+.service-offer-bg{
+    background-image: url(/public/images/service\ section2.jpg);
+    background-position: center;
+    background-size: cover;
+    .border-end-sz{
+        @include media-min-lg{
+            border-right: 2px solid $white-clr;
+        }
+    }
+    .border-bot-sz{
+        border-bottom: 2px solid $white-clr;
+    }
+}
+// --------------service-offer section ends
+//----------------------service page ends
+
+//----------------------pricing page starts
+//----------------------pricing plan section starts
+.pricing-plan-bg{
+    background :linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url(/public/images/pricing-section2.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    .lining-white{
+        border-top: 1px solid $white-clr;
+    }
+    .lining-white-dotted{
+        border-top: 1px dotted $trans-font-clr;
+    }
+    .trans-font-color{
+        color: $trans-font-clr;
+    }
+    .font-sizing{
+        font-size: 1.2rem;
+    }
+    .w-eight{
+        width: 80%;
+    }
+}
+//----------------------pricing plan section ends
+//----------------------pricing offer section starts
+.pricing-offer-bg{
+    background-image: url(/public/images/pricing-section3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+//----------------------pricing offer section ends
+//----------------------pricing card section starts
+.card-bg{
+    background-color: $card-backround;
+    .card-font{
+        color: $card-font-clr;
+    }
+    .card-border{
+        border-bottom: 1px solid $card-border-clr;
+    }
+    .card-size{
+        font-size: 1.1rem;
+    }
+    .card-pink{
+        color: $card-font-pink;
+    }
+    .button-padding{
+        @include media-max-sm{
+            padding: 1rem 0;
+            text-align: center;
+        }
+        @include media-min-md{
+            padding-left: 14%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
+//----------------------pricing card section ends
+//----------------------pricing page ends
+
+//----------------------portfolio page starts
+//----------------------portfolio section starts
+.port-img-bg{
+    background-color: $portfolio-bg-clr;
+    .image-sz{
+        width: 100%;
+    }
+    .zoom {
+        position: relative;
+        overflow: hidden;
+    }
+    .zoom img {
+        transition: all 0.3s;
+        transform: scale(1);
+    }
+    
+    .zoom:hover img {
+        transform: scale(1.1);
+    }
+}
+.image-sz{
+    width: 100%;
+}
+
+//----------------------portfolio section ends
+//----------------------portfolio page ends
+
+//----------------------contact-page starts
+.contact-form-bg{
+    background-image: url(/public/images/contact-section2.jpg);
+    background-position: center;
+    background-size: cover;
+    //----------------------contact-get section starts
+    .contact-get-font{
+        color: $contact-get-clr
+    }
+    .contact-get{
+        .contact-clr{
+            color: $contact-font;
+        }
+    }
+    //----------------------contact-get section ends
+    //----------------------contact-form section starts
+    .contact-border{
+        border: 1px solid $white-clr;
+    }
+    ::placeholder{
+        color: $black-clr;
+    }
+    .msg-padding{
+        padding-bottom: 15%;
+    }
+    //----------------------contact-form section ends
+}
+//----------------------contact-page ends
+
+
+
+

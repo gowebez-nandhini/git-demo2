@@ -1,0 +1,83 @@
+//----------home header section starts
+.header{
+    background-image: url(/public/images/section\ 1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    .nav-bg{
+        background-color: rgba($color: red, $alpha: 0.5);
+    }
+    .border-set{
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .text-space{
+        letter-spacing: 4px;
+    }
+    .padding-space{
+        padding-top: 12%;
+    }
+    .weight-set{
+        font-weight: bolder;
+    }
+}
+.head-hover
+{
+    color: $white-clr;
+    &:hover{
+    background: transparent;
+    }
+}
+.nav-bg{
+    background-color: rgba($color: red, $alpha: 0.5);
+}
+.h-set{
+    height: 90vh;
+}
+.logo{
+        width: 80%;
+    }
+//----------home header section ends
+//----------about header section starts
+.about-banner{
+    background-image: url(/public/images/about-us-banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+//----------about header section ends
+//----------service header section starts
+.service-banner{
+    background-image: url(/public/images/service-sec1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+//----------service header section ends
+//----------pricing header section starts
+.pricing-bg{
+    background-image: url(/public/images/pricing-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .pricing-head-bg{
+        background-image: url(/public/images/pricing-section1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+//----------pricing header section ends
+//----------portfolio header section starts
+.portfolio-bg{
+    background-image: url(/public/images/Portfolio.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+//----------portfolio header section ends
+//----------contact header section starts
+.contact-head-bg{
+    background-image: url(/public/images/contact-section1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+

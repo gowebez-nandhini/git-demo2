@@ -1,0 +1,17 @@
+.footer-bg{
+    background-image: url(/public/images/footer-final.jpg);
+    background-position: center;
+    background-size: cover;
+    .f-minus{
+        font-weight: 300;
+    }
+}
+.foot-logo{
+    width: 50%;
+    }
+@include media-min-md{
+    .foot-logo{
+        width: 14%;
+    }
+}
+

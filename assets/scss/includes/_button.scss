@@ -1,0 +1,55 @@
+.button-color{
+    background-color: white;
+    color: black;
+    &:hover{
+        border: 1px solid white;
+        color: white;
+    }
+}
+.more-about{
+    background-color: $black-clr;
+    color: $white-clr;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $black-clr;
+    }
+}
+.button-red{
+    background-color: $button-red;
+    color: $white-clr;
+    &:hover{
+        background-color: $white-clr;
+        color: $black-clr;
+        border: 1px solid $black-clr;
+    }
+}
+.pricing-button{
+    background-color: $white-clr;
+    color: $black-clr;
+    border: none;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $black-clr;
+    }
+}
+.card-button{
+    background-color: $bradius-bg;
+    border: none;
+    color: $white-clr;
+    font-size: .8rem;
+    &:hover{
+        background-color: $white-clr;
+        color: $black-clr;
+    }
+}
+.port-btn{
+    border: 1px solid $white-clr;
+    color: $white-clr;
+    @include media-min-lg{
+        font-size: 1.2rem;
+    }
+    &:hover{
+        background-color: $bradius-bg;
+        color: $white-clr;
+    }
+}
